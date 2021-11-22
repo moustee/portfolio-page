@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-bar').on('click', function() {
+               
+                $('.navbar').show();
+
+            });
+        });
+
+        $(document).ready(function() {
+            $('.exit').on('click', function() {
+               
+                $('.navbar').hide();
+                
+            });
+        });
+
+        $(document).ready(function() {
+            $('.mobile-dd').on('click', function() {
+               
+                $('#d-menu').toggle();
+                
+            });
+        });
+
+        $(document).ready(function() {
+            $('.mobile-dd2').on('click', function() {
+               
+                $('#d-menu2').toggle();
+                
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="index.html">MBM</a>
+            </div>
+
+            <div class="mobile-bar">
+                <img class="menu-bar" src="images/menu.svg" alt="">
+            </div>
+            <div class="navbar">
+                <img class="exit" src="images/exit.svg" alt="exit-btn">
+                <ul class="dd1">
+                    <li> <a href="#">Home</a></li>
+                    <li>
+                        <a class="mobile-dd" href="#">Dropdown <i class="bi-caret-down-fill" aria-hidden="true"></i></a>
+                            
+                        <div id="d-menu" class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Testimonials</a></li>
+                                <li>
+                                    <a class="mobile-dd2" href="#">Menu two <i id="mb-caret" class="bi-caret-down-fill" aria-hidden="true"></i> <i class="bi-caret-right-fill" aria-hidden="true"></i></a>
+                                    <div id="d-menu2" class="dropdown-menu2">
+                                        <ul>
+                                            <li><a href="#">Sub menu one</a></li>
+                                            <li><a href="#">Sub menu two</a></li>
+                                            <li><a href="#">Sub menu three</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Menu three</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="img-bg">
+        <div class="overlay"></div>
+        <div class="head">
+            <h1>I'm Mustapha Bello Muhammad <br> A Front-end Developer </h1>
+        </div>
+    </div>
+    <div id="about">
+        <div class="about-img">
+            <img src="images/img1.jpg" alt="Author's image">
+        </div>
+        <div class="about-content">
+            <div class="bio">
+                <h3>My Bio</h3>
+                <p>
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast of 
+                    the Semantics, a large language ocean.
+                </p>
+                <p>
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                    It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                </p>
+            </div>
+        
+            <div class="Pro">
+                <div class="progress-con">
+                    <div class="skills">
+                        <h3>DESIGN</h3>
+                        <div class="progress">
+                            <progress id="progress-bar" value="70" max="100">
+                                <span>70%</span> 
+                            </progress>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3>HTML5</h3>
+                        <div class="progress">
+                            <progress id="progress-bar" value="90" max="100"> 
+                                <span>90%</span>  
+                            </progress>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3>CSS3</h3>
+                        <div class="progress">
+                            <progress id="progress-bar" value="85" max="100">
+                                <span>85%</span> 
+                            </progress>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3>BOOTSTRAP</h3>
+                        <div class="progress">
+                            <progress id="progress-bar" value="50" max="100">
+                                <span>50%</span> 
+                            </progress>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3>JAVASCRIPT</h3>
+                        <div class="progress">
+                            <progress id="progress-bar" value="32" max="100">
+                                <span>32%</span>
+                            </progress>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <a class="btn0" href="#"   role="button">HIRE ME</a>
+                        <a class="btn1" href="#"   role="button">DOWNLOAD CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div id="portfolio">
+        <h2>My Portfolio</h2>
+        <nav class="nav2">
+            <ul>
+                <li>All</li>
+                <li>Designs</li>
+                <li>Photography</li>
+            </ul>
+        </nav>
+        <div class="imgs">
+            <div class="img1">
+                <a href="images/design1.jpg"><img src="images/design1.jpg" alt="designs image"></a>
+            </div>
+            <div class="img2">
+                <a href="images/photo2.jpg"><img src="images/photo2.jpg" alt="photography image"></a>
+            </div>
+            <div class="img3">
+                <a href="images/design2.jpg"><img src="images/design2.jpg" alt="designs image"></a>
+            </div>
+            <div class="img4">
+                <a href="images/photo3.jpg"><img src="images/photo3.jpg" alt="photography image"></a>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <h2>Services</h2>
+        <div class="service-div">
+            <div class="service">
+                <i class="bi-laptop" aria-hidden="true"></i>
+                <h3>Development</h3>
+                <p>
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the blind texts.
+                </p>
+            </div>
+            <div class="service">
+                <i class="bi-binoculars" aria-hidden="true"></i>
+                <h3>Design</h3>
+                <p>
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the blind texts.
+                </p>
+            </div>
+            <div class="service">
+                <i class="bi-cart-plus" aria-hidden="true"></i>
+                <h3>eCommerce</h3>
+                <p>
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the blind texts.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="resume">
+        <h2>Resume</h2>
+        <div class="exp">
+            <img src="images/img1.jpg" alt="Author's image">
+            <div class="work">
+                <h3>Work Experience</h3>
+                <div class="work-div">
+                    <div class="work-props">
+                            <span  class="job">Intern Web Developer</span><br>
+                            <span class="co"><i class="bi-building" aria-hidden="true"></i> Paritie, Inc</span>
+                            <span class="location"><i class="bi-geo-fill" aria-hidden="true"></i> Minna</span>
+                        <span>
+                    </div>
+                    <div class="duration">
+                        <div class="time">
+                            <span>
+                                <span>FULLTIME</span>
+                            </span>
+                        </div>
+                        <span class="time-frame"><i class="bi-calendar" aria-hidden="true"></i> September 2021 - Present</span>
+                    </div>
+                </div>
+                <div class="work-div">
+                    <div class="work-props2">
+                        <span>
+                            <span class="job">Intern Web Developer</span><br>
+                            <span class="co"><i class="bi-building" aria-hidden="true"></i> Federal Airport Authority</span>
+                            <span class="location"><i class="bi-geo-fill" aria-hidden="true"></i> Yola</span>
+                        <span>
+                    </div>
+                    <div class="duration">
+                        <div class="time">
+                            <span>
+                                <span>FULLTIME</span>
+                            </span>
+                        </div>
+                        <span class="time-frame"><i class="bi-calendar" aria-hidden="true"></i> November 2018 - July 2019</span>
+                    </div>
+                </div>
+                <div class="work-div">
+                    <div class="work-props3">
+                        <span>
+                            <span class="job">Tutor, Microsoft Suite</span><br>
+                            <span class="co"><i class="bi-building" aria-hidden="true"></i> Ami-tech Computer</span>
+                            <span class="location"><i class="bi-geo-fill" aria-hidden="true"></i> Minna</span>
+                        <span>
+                    </div>
+                    <div>
+                        <div class="time">
+                            <span>
+                                <span>PART-TIME</span>
+                            </span>
+                        </div>
+                        <span class="time-frame"><i class="bi-calendar" aria-hidden="true"></i> September 2015 - March 2016</span>
+                    </div>
+                </div>
+                <h3>Education</h3>
+                <div class="education-div">
+                    <div class="education-props">
+                        <span>
+                            <span class="qual">Bachelor in Computer Science</span><br>
+                            <span class="inst"><i class="bi-building" aria-hidden="true"></i> Usmanu Danfodio University</span>
+                            <span class="location1"><i class="bi-calendar" aria-hidden="true"></i> Sokoto</span>
+                        <span>
+                    </div>
+                    <span class="time-frame1"><i class="bi-calendar" aria-hidden="true"></i> January 2014 - October 2017</span>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div id="testimonials">
+        <div class="container">
+            <h2>Happy clients</h2>
+        </div>
+        <div class="tests">
+            <div>
+                <div class="client-cont">
+                    <div class="client-img">
+                        <img src="images/client1.png" alt="client">
+                    </div>
+                    <div class="clients">
+                        <blockquote>
+                            <p>
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, 
+                                a large language ocean.
+                            </p>
+                            <cite>— Jeremy Winston, CEO <a href="#">XYZ Inc</a>.</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="client-cont">
+                    <div class="client-img">
+                        <img src="images/client2.png" alt="client">
+                    </div>
+                    <div class="clients">
+                        <blockquote>
+                            <p>
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, 
+                                a large language ocean.
+                            </p>
+                            <cite>— Richard Atkinson, CEO<a href="#">XYZ Inc</a></cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="client-cont">
+                    <div class="client-img">
+                        <img src="images/client3.png" alt="client">
+                    </div>
+                    <div class="clients">
+                        <blockquote>
+                            <p>
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, 
+                                a large language ocean.
+                            </p>
+                            <cite>— Jeremy Winston, CEO <a href="#">XYZ Inc</a>.</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="client-cont">
+                    <div class="client-img">
+                        <img src="images/client4.png" alt="client">
+                    </div>
+                    <div class="clients">
+                        <blockquote>
+                            <p>
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, 
+                                a large language ocean.
+                            </p>
+                            <cite>— Richard Atkinson, CEO<a href="#">XYZ Inc</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="contact" class="contact-section">
+            <div class="contact-div">
+                <div class="contact-heading">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <div class="form-div">
+                <form class="contact-form">
+                    <div class="name">
+                        <div class="form-control">
+                            <label for="fname">First Name</label><br>
+                            <input type="text" id="fname" name="fname" class="input-group">
+                        </div>
+                        <div class="form-control">
+                            <label for="lname">Last Name</label><br>
+                            <input type="text" id="lname" name="lname" class="input-group">
+                        </div>
+                    </div>
+                    <div id="mail" class="form-control">
+                        <label for="email">Email address</label><br>
+                        <input type="email" id="email" name="email" class="input-group">
+                    </div>
+                    <div id="mess" class="form-control">
+                        <label for="message">Message</label><br>
+                        <textarea name="message" rows="10" cols="30"></textarea>
+                    </div>
+                    <div class= btn>
+                      <button type="submit">Send Message</button>
+                    </div>
+                </form> 
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <div class="address">
+                        <span><i class="bi-geo-fill" aria-hidden="true"></i> House No 2, Galaxy Estate</span>
+                        <ul>
+                            <li><a href="tel://2347016666364"><span><i class="bi-phone" aria-hidden="true"></i> +2347016666364</span></a></li>
+                            <li><a href="mailto:mustee6k@gmail.com"><span><i class="bi-mailbox" aria-hidden="true"></i> Mustee6k@gmail.com</span></a></li>
+                        </ul>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-con">
+                <div class="footer-var">
+                    <div class="foot1">
+                        <h3>About Me</h3>
+                        <p>
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, 
+                            a large language ocean.</p>
+                    </div>
+                    <div class="foot-con">
+                        <h3>Connect</h3>
+                        <div class="socials">
+                            <i class="bi-twitter" aria-hidden="true"></i> <i class="bi-instagram" aria-hidden="true"></i>
+                            <i class="bi-facebook" aria-hidden="true"></i> <i class="bi-linkedin" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-var">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">CSS3</a></li>
+                        <li><a href="#">Bootstrap</a></li>
+                        <li><a href="#">Javascript</a></li>
+                    </ul>
+                </div>
+                <div class="footer-var">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">eCommerce</a></li>
+                        <li><a href="#">Frontend</a></li>
+                    </ul>
+                </div>
+                <div class="footer-var2">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>House No 2, Galaxy Estate</li>
+                        <li><a href="tel://2347016666364">+2347016666364</a></li>
+                        <li><a href="mailto:mustee6k@gmail.com">Mustee6k@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="footnote">
+                <p>Copyright @2021 All rights reserved | Made with <i class="bi-heart-fill" aria-hidden="true"></i> by Mustapha Bello Muhammad</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
